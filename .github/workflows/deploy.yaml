@@ -1,0 +1,14 @@
+name: CI for main
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - run: echo "Deploying to production"
+      - run: echo "Deployed to production!"
